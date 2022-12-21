@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jo ken po</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="./../../js/game.js"></script>
+</head>
+<body>
+  <nav id="menu-h">
+		<ul>
+<!--./ indica q o link indica pra outra na mesma pasta!-->
+<!--../ indica q o link indica pra ele voltar um dominio para atras, um nivel atrás!-->
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../aboutjs.html">About Javascript</a></li>
+			<li><a href="../aboutcss.html">About Css</a></li>
+			<li><a href="../contact.html">Contact</a></li>
+			<li><a href="../hphouses.html">HP houses</a></li>
+			<li><a href="#">Log in</a></li>
+		</ul>
+	</nav><br><br><br>
+
+<div class="tudo">
+<p>jogue contra a máquina!</p><br>
+<p>escolha sua jogada e clique em "JO-KEN-PO!" para jogar.</p><br><br>
+  <h3 style="	margin-left:-1200px;">Jogador</h3><br><br>
+  <div class="jogo">
+  <ul id ="jogador"><br>
+      <li><h2 id="pedra" onclick="changecolor(1)">Pedra<br><img src="../../img/pedra.png" onclick="jogadaplayer1(1)"></h2></li>
+      <li><h2 id="papel" onclick="changecolor(2)">Papel<br><img src="../../img/papel.png" onclick="jogadaplayer1(2)"></h2></li>
+      <li><h2 id="tesoura" onclick="changecolor(3)">Tesoura<br><img src="../../img/tesoura.png" onclick="jogadaplayer1(3)"></h2></li>
+    </ul><br><br><br><br>
+
+  <h3 style="margin-top:-585px; margin-right: -1200px;">Computador</h3><br><br>
+    <ul id="computador"><br>
+      <li><h2 id="pedrapc">Pedra<br><img src="../../img/pedra.png"></h2></li>
+      <li><h2 id="papelpc">Papel<br><img src="../../img/papel.png"></h2></li>
+      <li><h2 id="tesourapc">Tesoura<br><img src="../../img/tesoura.png"></h2></li>
+    </ul>
+  </div><br><br><br>
+  <button onclick="rodada()" class="botaojogar">JO-KEN-PO!</button>
+</div>
+</body>
+</html>

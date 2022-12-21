@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM</title>
+		<script src="../js/main.js"></script>
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+	
+	<body>
+		<nav id="menu-h">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../pages/aboutjs.html">About Javascript</a></li>
+				<li><a href="../pages/aboutcss.html">About Css</a></li>
+				<li><a href="../pages/contact.html">Contact</a></li>
+				<li><a href="../pages/hphouses.html">HP houses</a></li>
+				<li><a href="#">Log in</a></li>
+			</ul>
+		</nav>
+		<br><br>
+		<div class="tudo">
+			<h1 id="id_h1" class="classe_h1">⭐Mundo Mágico do Javascript⭐</h1><br>
+			<div id="hphouse1"><br>
+				<p id="corvinal" class="classe_p" style="width:120px;height:20px; border-radius: 10px;">CORVINAL🦉</p>
+			<br>
+			<img src="../img/corvinal.webp"><br><br>
+		</div><br>
+		<div id="hphouse2"><br>
+			<p id="grifinoria" class="classe_p"style="width:120px;height:20px; border-radius: 10px;">GRIFINORIA🐅</p><br>
+			<img src="../img/grifinoria"><br><br>
+		</div><br>
+		<div id="hphouse3"><br>
+			<p id="sonserina" class="classe_p"style="width:120px;height:20px; border-radius: 10px;">SONSERINA🐍</p><br>
+			<img src="../img/sonserina.webp"><br><br>
+		</div><br>
+		<div id="hphouse4"><br>
+			<p id="lufalufa" class="classe_p" style="width:120px;height:20px; border-radius: 10px;">LUFA-LUFA🦡</p><br>
+			<img src="../img/lufalufa.webp"><br><br>
+		</div><br><br>
+		
+			<button type="button" id="bdefinir" onclick="recuperarPs()">Recuperar</button>
+			<button type="button" id="bdefinir1" onclick="definirCores()">Definir Cores</button><br><br>
+
+			<div>
+				<div>✨Meus feitiços✨</div>
+				Feitiço: <input type = "text"/>
+				Nível: <input type = "text"/> 	
+				<button type="button" id="bdefinir5" onclick="novoItem()"> Add </button>
+			</div><br>
+
+			<div>
+				<table id = "tabela">
+					<tr>
+						<th>Feitiço✨ </th>
+						<th>Nível 🏆</th>
+					</tr>
+				</table><br>
+			</div>
+			<table>
+				<tr>
+					<td onclick="LivrosCores()">Livros </td><td onclick ="PaginasCores()">Páginas</td>
+				</tr>
+				<tr>
+					<td class="livros">Teste1</td><td class="paginas">100</td>
+				</tr>
+				<tr>
+					<td class="livros">Teste2</td><td class="paginas">101</td>
+				</tr>
+				<tr>
+					<td class="livros">Teste3</td><td class="paginas">101</td>
+				</tr>
+				
+				
+			</table>
+		</div>
+	</body>
+</html>
+

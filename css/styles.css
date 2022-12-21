@@ -1,0 +1,212 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+:root {
+	--cor-background: #212123;
+	--cor-reflexo: rgba(255, 255, 255, 0.4);
+	--cores-dancantes: rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217),
+	rgb(255, 45, 83);
+}
+
+#menu-h {
+	background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+	max-width: 800px;
+	list-style: none;
+	padding: 0;
+}
+#menu-h ul li {
+	display:inline;
+}
+#menu-h ul li a {
+	color: #fff;
+	padding:20px;
+	display: inline-block;
+	text-decoration: none;
+	transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+	background-color: rgb(31,16,139);
+}
+
+#menu-h ul li:last-child a {
+	float: right;
+	background-color: rgba(118, 322, 24, 0.226);
+}
+.timetable table{
+	justify-content: center;
+	align-self:auto;
+	position: absolute;
+	margin-left: 70px;
+	margin-top: 120px;
+	width: 50%;	
+}
+.timetable table{
+	margin-left:350px;
+	text-align: center;
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+.timetable tr{
+	border:1px solid black;
+}
+
+.timetable table tr th{
+	border: 1px solid black;
+	padding: 5px;
+	color:#fff;
+	background-color:darkslategrey;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.timetable table tr td {
+	padding: 5px;
+	color:  black;
+	background-color:blanchedalmond;
+	border: 1px solid black;
+}
+
+.caixa {
+	background: linear-gradient(to right, var(--cores-dancantes));
+	width: 100%;
+	padding: 0;
+	position: relative;
+	z-index: 999;
+	animation: coresDancantes 2s linear infinite;
+}
+
+@keyframes coresDancantes{ 
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.tudo {
+	text-align: center;
+	justify-content: center;
+}
+/*definicao das casas hp*/
+#hphouse1:hover{
+	width: 200px;
+	border-radius: 50px;
+	background-color: rgb(52, 170, 220);
+	transform: scale(1.1);
+	transition: background .4s;
+}
+
+#hphouse2:hover{
+	width: 200px;
+	border-radius: 50px;
+	background-color: rgb(255, 45, 83);
+	transform: scale(1.1);
+	transition: background .4s;
+}
+
+#hphouse3:hover{
+	width: 200px;
+	border-radius: 50px;
+	background-color: rgb(76, 217, 105);
+	transform: scale(1.1);
+	transition: background .4s;
+}
+
+#hphouse4:hover{
+	width: 200px;
+	border-radius: 50px;
+	background-color: rgb(255,233,0);
+	transition: background .4s;
+	transform: scale(1.1);
+}
+
+.tudo ul li {
+	list-style-type: none;
+}
+
+.jogo {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.jogo ul li{
+  margin: 0 0.5em;
+}
+
+.jogo ul li h2{
+	text-decoration: none;
+  display: block;
+  font-family:Arial;
+  position: relative;
+  color: black;
+}
+
+.jogo ul li h2 img{
+	width: 30%;
+	cursor: pointer;
+}
+
+.jogo #jogador {
+	border-radius: 5rem;
+	border-color:rgb(52, 170, 220);
+	width: fit-content;
+	border-style: double;
+	margin-left: 30px;
+}
+
+.jogo #computador {
+	border-radius:5rem;
+	border-color:crimson;
+	width: fit-content;
+	border-style: double;
+	margin-right: 60px;
+}
+
+.botaojogar{
+color: Black;
+background-color:aquamarine;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 3em;
+width: 8em;
+font-size: large;
+font-weight: 600;
+cursor: pointer;
+}
+
+.botaojogar:hover {
+	transform: scale(1.2);
+	transition: 1s;
+}
+
+#escolhaplayer{
+	width:100px;
+	margin-top: -450px;
+	margin-left: 500px;
+}
+
+#escolhamaquina{
+	width: 150px;
+	margin-top: -60px;
+	margin-right: 550px;
+}
+
+.newcolor{
+	width: 110%;
+}
+
+.item{
+	background-color: antiquewhite;
+	width: 30%;
+	height: 100%;
+	margin-top: 50px;
+	border-radius: 15px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu site</title>
+        <link rel="stylesheet" href="../../css/styles.css" />
+    </head>
+    <body>
+        <nav id="menu-h" style="padding: 15px;">
+            <h1><a href="../aboutjs.html" style="text-decoration:none;color:white;">voltar</a></h1>
+        </nav>
+        <div class="tudo">
+        <form id="form1">
+            <h1>Indo à páginas além!</h1>
+            <br>Janela Simplona!<br>
+            <input id="inp2" type="button" value="Janela simples!" onclick="abre1();"><br>
+            Janela de 350px X 400px, sem barras e menu!<br>
+            <input id="inp2" type="button" value="Janela 2!" onclick="abre2();"><br>
+            Janela com menu e barra de rolagens, sem endereco e barra padrao!<br>
+            <input id="inp2" type="button" value="Janela 3!" onclick="abre3();"><br>
+            
+        </form>
+        
+        <script>
+            function abre1(){
+                window.open("http://www.google.com");
+            }
+            function abre2(){
+                window.open("http://www.google.com","simples","width=350,height=400");
+            }
+            function abre3(){
+                window.open("http://www.google.com","simples","menubar,scrollbars,width=300,height=200");
+            }
+        </script>
+        <button><a href="../aboutjs.html">voltar</a></button>
+    </div>
+    </body>
+</html>
